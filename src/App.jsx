@@ -12,7 +12,7 @@ const App = () => {
   const [cYear, setcYear]= useState(0);
   const [cMonth, setcMonth]= useState(0);
 
-  
+
   function getTime(){
       setInterval(() => {
         const time= new Date();
@@ -43,8 +43,8 @@ const App = () => {
   }, []);
 
   return (
-    <div className='bg-[rgb(183,158,158)] min-h-screen w-screen text-white flex justify-center items-center text-[100px] font-[900] relative flex-col'>
-      <div className='text-[30px] w-[470px] flex justify-between'>
+    <div className=' text-[4rem] bg-[rgb(183,158,158)] min-h-screen w-screen text-white flex justify-center items-center font-[900] relative flex-col p-10'>
+      <div className='text-[1.8rem] md:text-[2rem] gap-[8px] flex justify-around flex-wrap'>
         {
           daysOfWeek.map((day, index)=>{
             return <div className={index==cDay?"text-white": "text-[rgb(228,204,204)]"}>{day}</div>
@@ -52,7 +52,7 @@ const App = () => {
         }
       </div>
 
-      <div className='flex justify-center items-center'>
+      <div className='flex justify-center items-center md:text-[6.25rem] '>
         <span> {cHour} </span>
         <span> : </span>
         <span> {cMin} </span>
@@ -60,7 +60,7 @@ const App = () => {
         <span> {cSec} </span>
       </div>
 
-      <div className='flex justify-center items-center text-[30px]'>
+      <div className='flex justify-center items-center text-[1.8rem] md:text-[2.5rem]'>
           <span>{cDate}</span>
           <pre>, </pre>
           <span>{months[cMonth]}</span>
