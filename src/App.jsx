@@ -44,7 +44,7 @@ const App = () => {
 
   return (
     <div className=' text-[4rem] bg-[rgb(183,158,158)] min-h-screen w-screen text-white flex justify-center items-center font-[900] relative flex-col p-10'>
-      <div className='text-[1.8rem] md:text-[2rem] gap-[8px] flex justify-around flex-wrap'>
+      <div className='text-[1.2rem] md:text-[2rem] gap-[8px] flex justify-around flex-wrap'>
         {
           daysOfWeek.map((day, index)=>{
             return <div className={index==cDay?"text-white": "text-[rgb(228,204,204)]"}>{day}</div>
