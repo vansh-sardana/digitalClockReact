@@ -60,7 +60,7 @@ const Clock = () => {
         <span> {cSec} </span>
       </div>
 
-      <div className='flex justify-center items-center text-[1.8rem] md:text-[2.5rem]'>
+      <div className='flex justify-center items-center text-[1.5rem] md:text-[2.5rem]'>
           <span>{cDate}</span>
           <pre>, </pre>
           <span>{months[cMonth]}</span>
