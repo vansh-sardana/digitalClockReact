@@ -30,14 +30,14 @@ const Calendar = () => {
     },[]);
   return (
     <div className='mt-20'>
-        <div className='grid grid-cols-7 gap-x-4 text-[1.5rem]'>
+        <div className='grid grid-cols-7 gap-x-4 text-[1rem] md:text-[1.5rem]'>
         {
           w.map((day, index)=>{
             return <div className='flex justify-center items-center'>{day}</div>
           })
         }
         </div>
-        <div className='grid grid-cols-7 gap-x-4 text-[1.5rem]'>
+        <div className='grid grid-cols-7 gap-x-4 text-[1rem] md:text-[1.5rem]'>
 
             {
                 numbersArray.map((d)=>{
