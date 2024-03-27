@@ -44,7 +44,7 @@ const Clock = () => {
 
   return (
     <div>
-      <div className='text-[1.2rem] md:text-[2rem] gap-[8px] flex justify-around flex-wrap'>
+      <div className='text-[1rem] md:text-[2rem] gap-[8px] flex justify-around flex-wrap'>
         {
           daysOfWeek.map((day, index)=>{
             return <div className={index==cDay?"text-white": "text-[rgb(228,204,204)]"}>{day}</div>
