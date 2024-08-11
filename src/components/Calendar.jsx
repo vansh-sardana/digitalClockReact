@@ -29,7 +29,7 @@ const Calendar = () => {
         setDate()
     },[]);
   return (
-    <div className='mt-20'>
+    <div>
         <div className='grid grid-cols-7 gap-x-4 text-[1rem] md:text-[1.5rem]'>
         {
           w.map((day, index)=>{
